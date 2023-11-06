@@ -24,6 +24,7 @@ body {
 
 .container {
     padding: 10px 10%;
+    position: sticky;
 }
 
 nav {
