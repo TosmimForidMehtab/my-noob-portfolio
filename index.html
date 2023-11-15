@@ -6,23 +6,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Portfolio</title>
         <link rel="icon" href="/Docs/icon.jpg" type="image/x-icon" />
-        <script src="https://kit.fontawesome.com/2f0ada7272.js" crossorigin="anonymous"></script>
+        <script
+            src="https://kit.fontawesome.com/2f0ada7272.js"
+            crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <nav>
+            <!-- <img src="Images/logo.png" alt="Logo" class="logo" /> -->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
         <div id="header">
             <div class="container">
-                <nav>
-                    <!-- <img src="Images/logo.png" alt="Logo" class="logo" /> -->
-                    <ul id="sidemenu">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">My Projects</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                        <i class="fa-solid fa-square-xmark" onclick="closeMenu()"></i>
-                    </ul>
-                    <i class="fa-sharp fa-solid fa-bars" onclick="openMenu()"></i>
-                </nav>
                 <div class="header-text">
                     <h1>Hey! I am<br /><span>Tosmim</span>.</h1>
                 </div>
@@ -42,25 +44,58 @@
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
                         <p>
-                            I am a MERN stack developer. I am looking for companies/people to work with, whose goals align with mine. I am open to any opportunity where I can use my skillset and that
-                            can further develop me and broaden my horizon.
+                            I am a MERN stack developer. I am looking for
+                            companies/people to work with, whose goals align
+                            with mine. I am open to any opportunity where I can
+                            use my skillset and that can further develop me and
+                            broaden my horizon.
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                            <p
+                                class="tab-links active-link"
+                                onclick="openTab('skills')">
+                                Skills
+                            </p>
+                            <p class="tab-links" onclick="openTab('education')">
+                                Education
+                            </p>
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Programming Languages</span><br />C++, Python, Java, Javascript</li>
-                                <li><span>Web Development</span><br />MERN Stack</li>
-                                <li><span>Miscellaneous</span><br />HTML, CSS, VCS, Linux</li>
+                                <li>
+                                    <span>Programming Languages</span><br />C++,
+                                    Python, Java, Javascript
+                                </li>
+                                <li>
+                                    <span>Backend</span><br />Node Js, Express
+                                    Js, MongoDB, SQL, REST API
+                                </li>
+                                <li>
+                                    <span>Frontend</span><br />HTML5, CSS3,
+                                    React Js, Chakra UI, Tailwind Css
+                                </li>
+                                <li>
+                                    <span>Other</span><br />
+                                    Git & Github, Linux, Postman
+                                </li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2019-2023</span><br />Delhi College of Technology and Management, Faridabad, Haryana, India</li>
-                                <li><span>-2019</span><br />Ajmal College of Arts, Commerce and Science, Hojai, Assam, India</li>
-                                <li><span>-2017</span><br />Markaz Academy, Hojai, Assam, India</li>
+                                <li>
+                                    <span>2019-2023</span><br />Delhi College of
+                                    Technology and Management, Faridabad,
+                                    Haryana, India
+                                </li>
+                                <li>
+                                    <span>-2019</span><br />Ajmal College of
+                                    Arts, Commerce and Science, Hojai, Assam,
+                                    India
+                                </li>
+                                <li>
+                                    <span>-2017</span><br />Markaz Academy,
+                                    Hojai, Assam, India
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -76,8 +111,13 @@
                         <img src="Images/proj2.jpg" alt="Project 2" />
                         <div class="layer">
                             <h3>Chit Chat</h3>
-                            <p>Chatting web app with individual and group chat functionalities.</p>
-                            <a href="https://letschitchat.onrender.com"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <p>
+                                Chatting web app with individual and group chat
+                                functionalities.
+                            </p>
+                            <a href="https://letschitchat.onrender.com"
+                                ><i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
                         </div>
                     </div>
                     <div class="project">
@@ -85,19 +125,31 @@
                         <div class="layer">
                             <h3>File Share</h3>
                             <p>A web app to share files with others.</p>
-                            <a href="https://uhavemyfile.onrender.com"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <a href="https://uhavemyfile.onrender.com"
+                                ><i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
                         </div>
                     </div>
                     <div class="project">
                         <img src="Images/proj1.jpg" alt="Project 1" />
                         <div class="layer">
                             <h3>File Organizer</h3>
-                            <p>This program automatically organizes files based on their extensions.</p>
-                            <a href="https://github.com/TosmimForidMehtab/cleanDesk"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <p>
+                                This program automatically organizes files based
+                                on their extensions.
+                            </p>
+                            <a
+                                href="https://github.com/TosmimForidMehtab/cleanDesk"
+                                ><i class="fa-solid fa-up-right-from-square"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/TosmimForidMehtab?tab=repositories" class="btn">See More</a>
+                <a
+                    href="https://github.com/TosmimForidMehtab?tab=repositories"
+                    class="btn"
+                    >See More</a
+                >
             </div>
         </div>
 
@@ -106,24 +158,56 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>tosmimforidmehtab@gmail.com</p>
-                        <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+91 8822196622</p>
+                        <p>
+                            <i class="fa-sharp fa-solid fa-paper-plane"></i
+                            >tosmimforidmehtab@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa-sharp fa-solid fa-phone-volume"></i>+91
+                            8822196622
+                        </p>
                         <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/tosmimforidmehtab/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/TosmimForidMehtab"><i class="fa-brands fa-github"></i></a>
+                            <a
+                                href="https://www.linkedin.com/in/tosmimforidmehtab/"
+                                ><i class="fa-brands fa-linkedin"></i
+                            ></a>
+                            <a href="https://github.com/TosmimForidMehtab"
+                                ><i class="fa-brands fa-github"></i
+                            ></a>
                         </div>
                     </div>
 
                     <div class="contact-right">
-                        <form action="https://formsubmit.co/mehtabforidtosmim@gmail.com" method="POST">
-                            <input type="text" name="Name" placeholder="Your Name" required />
-                            <input type="email" name="Email" id="email" placeholder="Your Email" required />
-                            <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
+                        <form
+                            action="https://formsubmit.co/mehtabforidtosmim@gmail.com"
+                            method="POST">
+                            <input
+                                type="text"
+                                name="Name"
+                                placeholder="Your Name"
+                                required />
+                            <input
+                                type="email"
+                                name="Email"
+                                id="email"
+                                placeholder="Your Email"
+                                required />
+                            <textarea
+                                name="Message"
+                                id="message"
+                                rows="6"
+                                placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">
+                                Submit
+                            </button>
                         </form>
                     </div>
                 </div>
-                <a href="#header"><i class="fa-solid fa-arrow-up-from-bracket fa-beat fa-xl" style="color: #3eff1c"></i></a>
+                <a href="#header"
+                    ><i
+                        class="fa-solid fa-arrow-up-from-bracket fa-beat fa-xl"
+                        style="color: #3eff1c"></i
+                ></a>
             </div>
 
             <div class="copyright">
